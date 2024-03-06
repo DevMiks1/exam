@@ -37,6 +37,11 @@
   position: relative;
   z-index: 5;
 }
+
+#hero #paragraph {
+  position: relative;
+  z-index: 5;
+}
 @media (max-width: 800px) and (min-width: 701px){
   #hero {
     background-position: top 0 right 23%;
@@ -53,11 +58,37 @@
   }
 }
 
-@media (max-width: 600px) and (min-width: 500px){
+@media (max-width: 600px) and (min-width: 501px){
   #hero {
     background-position: top 0 right 23%;
     background-size: 225%;
     background-repeat: no-repeat;
+  }
+
+  #hero #heading {
+    
+    font-size: 50px;
+  }
+
+  #hero #paragraph {
+   font-size: 37px;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 300px){
+  #hero {
+    background-position: top 0 right 33%;
+    background-size: 290%;
+    background-repeat: no-repeat;
+  }
+
+  #hero #heading {
+    
+    font-size: 40px;
+  }
+
+  #hero #paragraph {
+   font-size: 22px;
   }
 }
 

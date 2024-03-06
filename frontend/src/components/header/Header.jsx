@@ -11,7 +11,7 @@ const Header = () => {
           Amaia Scapes Laguna
         </h2>
         <p
-          id="heading"
+          id="paragraph"
           className="text-[32px] sm:text-[39.77px] font-[800] text-green  pt-[7px] "
         >
           PROPERTY LIST
