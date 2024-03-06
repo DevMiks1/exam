@@ -1,0 +1,64 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#hero {
+  position: relative;
+  background-image: url("./assets/logo.jpg");
+  height: 321px;
+
+  background-position: top 35% right 23%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 321px;
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+#hero #heading {
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 800px) and (min-width: 701px){
+  #hero {
+    background-position: top 0 right 23%;
+    background-size: 160%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 601px){
+  #hero {
+    background-position: top 0 right 23%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 500px){
+  #hero {
+    background-position: top 0 right 23%;
+    background-size: 225%;
+    background-repeat: no-repeat;
+  }
+}
+
+
